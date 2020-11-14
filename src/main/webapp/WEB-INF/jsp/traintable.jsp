@@ -152,6 +152,7 @@
                                         alert("增加" + data + "张成功");
                                         $('#o1').prop('checked', false)
                                         $('.o2').prop('checked', $('#o1').prop('checked'))
+                                        location.href = "/train/train";
                                     }
                                 })
                             }else {
