@@ -47,7 +47,7 @@ public class UserController {
     public String loginOut(HttpServletRequest request){
         HttpSession session = request.getSession();
         session.removeAttribute("user");
-        System.out.println(111);
+        System.out.println("我跟你删了");
         return "forward:/train";
     }
 
