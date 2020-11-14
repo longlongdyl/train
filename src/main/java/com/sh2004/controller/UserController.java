@@ -48,7 +48,7 @@ public class UserController {
         HttpSession session = request.getSession();
         session.removeAttribute("user");
         System.out.println("我跟你删了");
-        System.out.println("我跟你删了");
+        System.out.println("郭哲宇到此二游");
         return "forward:/train";
     }
 
