@@ -49,6 +49,7 @@ public class UserController {
         session.removeAttribute("user");
         System.out.println("我跟你删了");
         System.out.println("郭哲宇到此二游");
+        System.out.println("王勇强到此一游");
         return "forward:/train";
     }
 
