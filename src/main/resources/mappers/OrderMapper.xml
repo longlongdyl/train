@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.sh2004.mapper.OrderMapper">
+<select id="selectOrder" resultType="map">
+    select * from t_train t,t_order o where o.uid = #{uid} and o.otime=t.tnumber
+</select>
+    <resultMap id="listResultMap" type="train">
+        <id property="tid" column="tid" />
+        <association property="order" javaType="order">
+            <id property="oid" column="oid" />
+            <result property="otime2" column="otime2" />
+        </association>
+    </resultMap>
+</mapper>
